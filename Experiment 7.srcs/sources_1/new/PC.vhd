@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Ryan Solorzano and Ty Farris
 -- 
 -- Create Date: 10/14/2017 11:00:21 PM
 -- Design Name: 
@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity PC is
-  Port ( );
+  —-Port ( );
 end PC;
 
 architecture Behavioral of PC is
