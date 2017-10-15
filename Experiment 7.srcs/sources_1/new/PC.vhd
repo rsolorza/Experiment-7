@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity PC is
---  Port ( );
+  Port ( );
 end PC;
 
 architecture Behavioral of PC is
