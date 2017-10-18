@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Oct 18 12:28:42 2017
+# Process ID: 15072
+# Current directory: C:/Users/rsolorza/Desktop/Experiment-7-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12696 C:\Users\rsolorza\Desktop\Experiment-7-master\Experiment 7.xpr
+# Log file: C:/Users/rsolorza/Desktop/Experiment-7-master/vivado.log
+# Journal file: C:/Users/rsolorza/Desktop/Experiment-7-master\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd}}
+update_compile_order -fileset sources_1
+remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd}}
+file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd}
+add_files -norecurse {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd}}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd}}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd}}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd}}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd}}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd}}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd}}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd}}
+update_compile_order -fileset sources_1
+remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd}}
+file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd}
+remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd}}
+file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v}}
+update_compile_order -fileset sources_1
+remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v}}
+file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd}}
+update_compile_order -fileset sources_1
+remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v}}
+file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v}
+close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd} w ]
+add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd}}
+update_compile_order -fileset sources_1
