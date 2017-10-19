@@ -44,13 +44,13 @@ architecture Behavioral of RAT_MCU is
    end component;
 
    component ALU
-       Port ( A : in  STD_LOGIC_VECTOR (7 downto 0);
-              B : in  STD_LOGIC_VECTOR (7 downto 0);
+       Port (   A : in  STD_LOGIC_VECTOR (7 downto 0);
+                B : in  STD_LOGIC_VECTOR (7 downto 0);
               Cin : in  STD_LOGIC;
               SEL : in  STD_LOGIC_VECTOR(3 downto 0);
-              C : out  STD_LOGIC;
-              Z : out  STD_LOGIC;
-              RESULT : out  STD_LOGIC_VECTOR (7 downto 0));
+                C : out  STD_LOGIC;
+                Z : out  STD_LOGIC;
+           RESULT : out  STD_LOGIC_VECTOR (7 downto 0));
    end component;
 
    component CONTROL_UNIT 
@@ -110,19 +110,68 @@ architecture Behavioral of RAT_MCU is
              FROM_STACK : in std_logic_vector (9 downto 0); 
              FROM_INTRR : in std_logic_vector (9 downto 0); 
              PC_MUX_SEL : in std_logic_vector (1 downto 0); 
-             PC_COUNT   : out std_logic_vector (9 downto 0); 
+             PC_COUNT   : out std_logic_vector (9 downto 0)); 
    end component; 
 
-   -- intermediate signals ----------------------------------
-   signal s_pc_ld : std_logic := '0'; 
-   signal s_pc_inc : std_logic := '0'; 
-   signal s_rst : std_logic := '0'; 
-   signal s_pc_mux_sel : std_logic_vector(1 downto 0) := "00"; 
-   signal s_pc_count : std_logic_vector(9 downto 0) := (others => '0');   
+   component FlagReg
+        Port ( D    : in  STD_LOGIC; --flag input
+               LD   : in  STD_LOGIC; --load Q with the D value
+               SET  : in  STD_LOGIC; --set the flag to '1'
+               CLR  : in  STD_LOGIC; --clear the flag to '0'
+               CLK  : in  STD_LOGIC; --system clock
+               Q    : out  STD_LOGIC); --flag output
+    end component;
+    
+    component Mux_2x1
+        Port ( A : in STD_LOGIC_VECTOR (7 downto 0);
+               B : in STD_LOGIC_VECTOR (7 downto 0);
+             SEL : in STD_LOGIC;
+          OUTPUT : out STD_LOGIC_VECTOR (7 downto 0));
+    end component;
+    
+    component Mux_4x1_8bit
+         Port ( A : in STD_LOGIC_VECTOR (7 downto 0);
+                B : in STD_LOGIC_VECTOR (7 downto 0);
+                C : in STD_LOGIC_VECTOR (7 downto 0);
+                D : in STD_LOGIC_VECTOR (7 downto 0); 
+              SEL : in STD_LOGIC_VECTOR (1 downto 0);
+           OUTPUT : out STD_LOGIC_VECTOR (7 downto 0));    
+    end component;
+     
+   -- intermediate signals ----------------------------------  
    signal s_inst_reg : std_logic_vector(17 downto 0) := (others => '0'); 
+ 
+   -- signals into PC ----------------------------------------
+   signal pc_mux_input : std_logic_vector(9 downto 0) := (others => '0');
+   signal s_pc_count : std_logic_vector(9 downto 0) := (others => '0');
    
+   -- signal for Scratch RAM/ SP ------------------------------------------
+   signal scr_data_out :std_logic_vector(9 downto 0) := (others => '0');
    
+   -- signals into Register File ------------------------------
+   signal reg_data_in : std_logic_vector(7 downto 0) := "00000000";
+   
+   -- signals into the ALU -----------------------------------
+   signal dx_out : std_logic_vector(7 downto 0) := "00000000";
+   signal dy_out : std_logic_vector(7 downto 0) := "00000000";
+   signal alu_b_input : std_logic_vector(7 downto 0) := "00000000";
+   signal carry_flag : std_logic := '0';
 
+    -- signals out of the ALU ---------------------------------
+    signal alu_result : std_logic_vector(7 downto 0) := "00000000";
+    signal c_flag_in : std_logic := '0';
+    signal z_flag_in : std_logic := '0';
+
+    -- signals from the Control Unit --------------------------
+    signal rf_wr : std_logic := '0';
+    signal rf_wr_sel : std_logic_vector(1 downto 0) := "00";
+    signal alu_sel : std_logic_vector(3 downto 0) := "0000";
+    signal alu_opy_sel : std_logic := '0';
+    signal s_pc_ld : std_logic := '0'; 
+    signal s_pc_inc : std_logic := '0'; 
+    signal s_rst : std_logic := '0'; 
+    signal s_pc_mux_sel : std_logic_vector(1 downto 0) := "00"; 
+    
    -- helpful aliases ------------------------------------------------------------------
    alias s_ir_immed_bits : std_logic_vector(9 downto 0) is s_inst_reg(12 downto 3); 
    
@@ -136,13 +185,13 @@ begin
                      CLK => CLK); 
 
    my_alu: ALU
-   port map ( A => ,       
-              B => ,       
-              Cin => ,     
-              SEL => ,     
-              C => ,       
-              Z => ,       
-              RESULT => ); 
+   port map ( A => dx_out,       
+              B => alu_b_input,       
+              Cin => carry_flag,     
+              SEL => alu_sel,     
+              C => c_flag_in,       
+              Z => z_flag_in,       
+              RESULT => alu_result); 
 
 
    my_cu: CONTROL_UNIT 
@@ -162,11 +211,11 @@ begin
               SP_INCR       => , 
               SP_DECR       => , 
 
-              RF_WR         => , 
-              RF_WR_SEL     => , 
+              RF_WR         => rf_wr, 
+              RF_WR_SEL     => rf_wr_sel, 
 
-              ALU_OPY_SEL   => , 
-              ALU_SEL       => ,
+              ALU_OPY_SEL   => alu_opy_sel, 
+              ALU_SEL       => alu_sel,
 			  
               SCR_WR        => , 
               SCR_ADDR_SEL  => ,              
@@ -181,30 +230,30 @@ begin
               I_FLAG_SET    => , 
               I_FLAG_CLR    => ,  
 
-              RST           => ,
+              RST           => s_rst,
               IO_STRB       => );
               
 
    my_regfile: RegisterFile 
-   port map ( D_IN   => ,   
-              DX_OUT => ,   
-              DY_OUT => ,   
-              ADRX   => ,   
-              ADRY   => ,     
-              WR     => ,   
+   port map ( D_IN   => reg_data_in,   
+              DX_OUT => dx_out,   
+              DY_OUT => dy_out,   
+              ADRX   => s_inst_reg(12 downto 8),   
+              ADRY   => s_inst_reg(7 downto 3),     
+              WR     => rf_wr,   
               CLK    => CLK); 
 
 
    my_PC: PC 
-   port map ( RST        => ,
+   port map ( RST        => s_rst,
               CLK        => CLK,
-              PC_LD      => ,
-              PC_INC     => ,
-              FROM_IMMED => ,
-              FROM_STACK => ,
-              FROM_INTRR => ,
-              PC_MUX_SEL => ,
-              PC_COUNT   => ); 
+              PC_LD      => s_pc_ld,
+              PC_INC     => s_pc_inc,
+              FROM_IMMED => s_inst_reg(12 downto 3),
+              FROM_STACK => scr_data_out,
+              FROM_INTRR => "1111111111",
+              PC_MUX_SEL => s_pc_mux_sel,
+              PC_COUNT   => s_pc_count); 
 
 
 end Behavioral;
