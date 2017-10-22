@@ -34,7 +34,7 @@ end Mux_3x2;
 architecture Behavioral of Mux_3x2 is
 
 begin
-    myProcess: process (A, B, SEL)
+    myProcess: process (A, B, C, SEL)
     begin 
     
         if (SEL = "00") then

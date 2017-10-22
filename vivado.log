@@ -2,73 +2,2145 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Wed Oct 18 12:28:42 2017
-# Process ID: 15072
-# Current directory: C:/Users/rsolorza/Desktop/Experiment-7-master
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12696 C:\Users\rsolorza\Desktop\Experiment-7-master\Experiment 7.xpr
-# Log file: C:/Users/rsolorza/Desktop/Experiment-7-master/vivado.log
-# Journal file: C:/Users/rsolorza/Desktop/Experiment-7-master\vivado.jou
+# Start of session at: Fri Oct 20 20:50:33 2017
+# Process ID: 11240
+# Current directory: E:/Experiment-7-master
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10868 E:\Experiment-7-master\Experiment 7.xpr
+# Log file: E:/Experiment-7-master/vivado.log
+# Journal file: E:/Experiment-7-master\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/rhino/OneDrive/Documents/CPE 233/Experiment 7' since last save.
+open_project {E:/Experiment-7-master/Experiment 7.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/rsolorza/Desktop/Experiment-7-master' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.ip_user_files', nor could it be found using path 'C:/Users/rhino/OneDrive/Documents/CPE 233/Experiment 7/Experiment 7.ip_user_files'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/Experiment-7-master/Experiment 7.ip_user_files', nor could it be found using path 'C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 815.809 ; gain = 78.672
 update_compile_order -fileset sources_1
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd}}
-update_compile_order -fileset sources_1
-remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd}}
-file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/RAT Wrapper.vhd}
-add_files -norecurse {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd}}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd}}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd}}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd}}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd}}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd}}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd}}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd}}
-update_compile_order -fileset sources_1
-remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd}}
-file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Z_flag.vhd}
-remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd}}
-file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/C_flag.vhd}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd}}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd}}
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v}}
-update_compile_order -fileset sources_1
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v}}
-update_compile_order -fileset sources_1
-remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v}}
-file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.v}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd}}
-update_compile_order -fileset sources_1
-remove_files  {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v}}
-file delete -force {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_3x2.v}
-close [ open {C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd} w ]
-add_files {{C:/Users/rsolorza/Desktop/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd}}
-update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Oct 20 20:52:35 2017] Launched synth_1...
+Run output will be captured here: E:/Experiment-7-master/Experiment 7.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 820.609 ; gain = 0.000
+launch_runs impl_1 -jobs 2
+[Fri Oct 20 20:53:53 2017] Launched impl_1...
+Run output will be captured here: E:/Experiment-7-master/Experiment 7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 823.426 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Fri Oct 20 20:56:34 2017] Launched synth_1...
+Run output will be captured here: E:/Experiment-7-master/Experiment 7.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 826.953 ; gain = 0.000
+launch_runs impl_1 -jobs 2
+[Fri Oct 20 20:58:54 2017] Launched impl_1...
+Run output will be captured here: E:/Experiment-7-master/Experiment 7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 826.953 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Oct 20 21:00:30 2017] Launched impl_1...
+Run output will be captured here: E:/Experiment-7-master/Experiment 7.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 826.953 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RAT_wrapper' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj RAT_wrapper_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot RAT_wrapper_behav xil_defaultlib.RAT_wrapper -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.rat_wrapper
+Built simulation snapshot RAT_wrapper_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 21:17:09 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 846.539 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RAT_wrapper_behav -key {Behavioral:sim_1:Functional:RAT_wrapper} -tclbatch {RAT_wrapper.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source RAT_wrapper.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RAT_wrapper_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 905.480 ; gain = 58.941
+set_property top testbench_exp7 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Experiment-7-master/Experiment 7.sim/sim_1/behav/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Experiment-7-master/Experiment 7.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Experiment-7-master/Experiment 7.sim/sim_1/behav/RAT_wrapper_behav.wdb
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 21:17:59 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_exp7_behav -key {Behavioral:sim_1:Functional:testbench_exp7} -tclbatch {testbench_exp7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source testbench_exp7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-5357] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:37 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 21:19:12 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_exp7_behav -key {Behavioral:sim_1:Functional:testbench_exp7} -tclbatch {testbench_exp7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source testbench_exp7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_exp7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:25 . Memory (MB): peak = 905.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 21:23:21 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_exp7_behav -key {Behavioral:sim_1:Functional:testbench_exp7} -tclbatch {testbench_exp7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source testbench_exp7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_exp7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/my_PC}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 905.480 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/reg_file_mux}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 905.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+ERROR: [VRFC 10-1412] syntax error near reset [E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd:73]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd:29]
+INFO: [VRFC 10-240] VHDL file E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 905.480 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 21:38:32 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_exp7_behav -key {Behavioral:sim_1:Functional:testbench_exp7} -tclbatch {testbench_exp7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source testbench_exp7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_exp7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/MCU/my_PC}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/MCU/my_regfile}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 905.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 21:49:48 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_exp7_behav -key {Behavioral:sim_1:Functional:testbench_exp7} -tclbatch {testbench_exp7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source testbench_exp7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_exp7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/MCU/reg_file_mux}} 
+add_wave {{/testbench_exp7/RAT/MCU/my_regfile}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/MCU/my_alu}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/MCU/my_PC}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/MCU/my_regfile}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 905.480 ; gain = 0.000
+add_wave {{/testbench_exp7/RAT/MCU/my_cu}} 
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 905.480 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 905.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 22:11:56 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_exp7_behav -key {Behavioral:sim_1:Functional:testbench_exp7} -tclbatch {testbench_exp7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source testbench_exp7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_exp7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:21 . Memory (MB): peak = 905.480 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 905.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Experiment-7-master/Experiment -notrace
+couldn't read file "E:/Experiment-7-master/Experiment": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Oct 20 22:15:58 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '9' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_exp7_behav -key {Behavioral:sim_1:Functional:testbench_exp7} -tclbatch {testbench_exp7.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source testbench_exp7.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_exp7_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 905.480 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench_exp7' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_exp7_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/ALU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CONTROL_UNIT
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flags.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Flags
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Flip_Flop.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagReg
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_2x1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_2x1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Mux_4x1_8bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_4x1_8bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ProgramCounter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_MCU.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_MCU
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Rat_Wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RAT_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/Reg_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity RegisterFile
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/clock_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity clk_div2_buf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/cntr_10bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity cntr_10bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/mux_3x2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Mux_3x2
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sources_1/new/prog_rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prog_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/Experiment-7-master/Experiment 7.srcs/sim_1/new/testbench_exp7.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testbench_exp7
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Experiment-7-master/Experiment 7.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0813dd5bafc94a5f8a882ac7446ea610 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_exp7_behav xil_defaultlib.testbench_exp7 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.clk_div2_buf [clk_div2_buf_default]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(initp_00="000000000000...]
+Compiling architecture ramb16_s18_v of entity unisim.RAMB16_S18 [\RAMB16_S18(initp_00="0000000000...]
+Compiling architecture low_level_definition of entity xil_defaultlib.prog_rom [prog_rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.CONTROL_UNIT [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterFile [registerfile_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_3x2 [mux_3x2_default]
+Compiling architecture behavioral of entity xil_defaultlib.cntr_10bit [cntr_10bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ProgramCounter [programcounter_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2x1 [mux_2x1_default]
+Compiling architecture behavioral of entity xil_defaultlib.FlagReg [flagreg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Flags [flags_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_4x1_8bit [mux_4x1_8bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_MCU [rat_mcu_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAT_wrapper [rat_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench_exp7
+Built simulation snapshot testbench_exp7_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 905.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 905.480 ; gain = 0.000
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 905.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 12:58:17 2017...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 20 22:23:13 2017...

@@ -87,8 +87,8 @@ architecture Behavioral of RAT_MCU is
               FLG_LD_SEL    : out  STD_LOGIC;
               FLG_Z_LD      : out  STD_LOGIC;
               
-              I_FLAG_SET    : out  STD_LOGIC;
-              I_FLAG_CLR    : out  STD_LOGIC;
+              I_SET    : out  STD_LOGIC;
+              I_CLR    : out  STD_LOGIC;
 
               RST           : out  STD_LOGIC;
               IO_STRB       : out  STD_LOGIC);
@@ -100,26 +100,31 @@ architecture Behavioral of RAT_MCU is
               DY_OUT : out    STD_LOGIC_VECTOR (7 downto 0);
               ADRX   : in     STD_LOGIC_VECTOR (4 downto 0);
               ADRY   : in     STD_LOGIC_VECTOR (4 downto 0);
-              WR     : in     STD_LOGIC;
+              WE     : in     STD_LOGIC;
               CLK    : in     STD_LOGIC);
    end component;
 
-   component PC 
+   component ProgramCounter 
       port ( RST,CLK,PC_LD,PC_INC : in std_logic; 
              FROM_IMMED : in std_logic_vector (9 downto 0); 
              FROM_STACK : in std_logic_vector (9 downto 0); 
              FROM_INTRR : in std_logic_vector (9 downto 0); 
              PC_MUX_SEL : in std_logic_vector (1 downto 0); 
-             PC_COUNT   : out std_logic_vector (9 downto 0)); 
+                  CNT   : out std_logic_vector (9 downto 0)); 
    end component; 
-
-   component FlagReg
-        Port ( D    : in  STD_LOGIC; --flag input
-               LD   : in  STD_LOGIC; --load Q with the D value
-               SET  : in  STD_LOGIC; --set the flag to '1'
-               CLR  : in  STD_LOGIC; --clear the flag to '0'
-               CLK  : in  STD_LOGIC; --system clock
-               Q    : out  STD_LOGIC); --flag output
+    
+    component Flags
+        Port ( FLG_C_SET : in STD_LOGIC;
+           FLG_C_CLR : in STD_LOGIC;
+           FLG_C_LD : in STD_LOGIC;
+           FLG_Z_LD : in STD_LOGIC;
+           FLG_LD_SEL : in STD_LOGIC;
+           FLG_SHAD_LD : in STD_LOGIC;
+           C_FLAG : out STD_LOGIC;
+           Z_FLAG : out STD_LOGIC;
+           C : in STD_LOGIC;
+           Z : in STD_LOGIC;
+           CLK : in STD_LOGIC);
     end component;
     
     component Mux_2x1
@@ -171,6 +176,28 @@ architecture Behavioral of RAT_MCU is
     signal s_pc_inc : std_logic := '0'; 
     signal s_rst : std_logic := '0'; 
     signal s_pc_mux_sel : std_logic_vector(1 downto 0) := "00"; 
+    signal i_flag_set : std_logic := '0';
+    signal i_flag_clr : std_logic := '0';
+    
+    -- signals into SP -------------------------------------------
+    signal sp_ld : std_logic := '0';
+    signal sp_inc : std_logic := '0';
+    signal sp_dec : std_logic := '0';
+    signal sp_data_out : std_logic_vector (7 downto 0) := (others => '0');
+    
+    -- signals into SCR -------------------------------------------
+    signal scr_wr : std_logic := '0';
+    signal scr_data_sel : std_logic := '0';
+    signal scr_addr_sel : std_logic_vector(1 downto 0);
+    
+    -- signals into Flags ------------------------------------------
+    signal flg_c_set : std_logic := '0';
+    signal flg_c_clr : std_logic := '0';
+    signal flg_c_ld : std_logic := '0';
+    signal flg_z_ld : std_logic := '0';
+    signal flg_ld_sel : std_logic := '0';
+    signal flg_shad_ld : std_logic := '0';    
+    signal z_flag : std_logic := '0';
     
    -- helpful aliases ------------------------------------------------------------------
    alias s_ir_immed_bits : std_logic_vector(9 downto 0) is s_inst_reg(12 downto 3); 
@@ -179,6 +206,9 @@ architecture Behavioral of RAT_MCU is
 
 begin
 
+    OUT_PORT <= dx_out;
+    PORT_ID <= s_inst_reg(7 downto 0);
+    
    my_prog_rom: prog_rom  
    port map(     ADDRESS => s_pc_count, 
              INSTRUCTION => s_inst_reg, 
@@ -196,20 +226,20 @@ begin
 
    my_cu: CONTROL_UNIT 
    port map ( CLK           => CLK, 
-              C             => , 
-              Z             => , 
-              INT           => , 
+              C             => carry_flag, 
+              Z             => z_flag, 
+              INT           => INT, 
               RESET         => RESET, 
-              OPCODE_HI_5   => , 
-              OPCODE_LO_2   => , 
+              OPCODE_HI_5   => s_inst_reg(17 downto 13), 
+              OPCODE_LO_2   => s_inst_reg(1 downto 0), 
               
               PC_LD         => s_pc_ld, 
               PC_INC        => s_pc_inc,  
               PC_MUX_SEL    => s_pc_mux_sel, 
 
-              SP_LD         => , 
-              SP_INCR       => , 
-              SP_DECR       => , 
+              SP_LD         => sp_ld, 
+              SP_INCR       => sp_inc, 
+              SP_DECR       => sp_dec, 
 
               RF_WR         => rf_wr, 
               RF_WR_SEL     => rf_wr_sel, 
@@ -217,21 +247,21 @@ begin
               ALU_OPY_SEL   => alu_opy_sel, 
               ALU_SEL       => alu_sel,
 			  
-              SCR_WR        => , 
-              SCR_ADDR_SEL  => ,              
-			  SCR_DATA_SEL  => ,
+              SCR_WR        => scr_wr, 
+              SCR_ADDR_SEL  => scr_addr_sel,              
+			  SCR_DATA_SEL  => scr_data_sel,
 			  
-              FLG_C_LD      => , 
-              FLG_C_SET     => , 
-              FLG_C_CLR     => , 
-              FLG_SHAD_LD   => , 
-              FLG_LD_SEL    => , 
-              FLG_Z_LD      => , 
-              I_FLAG_SET    => , 
-              I_FLAG_CLR    => ,  
+              FLG_C_LD      => flg_c_ld, 
+              FLG_C_SET     => flg_c_set, 
+              FLG_C_CLR     => flg_c_clr, 
+              FLG_SHAD_LD   => flg_shad_ld, 
+              FLG_LD_SEL    => flg_ld_sel, 
+              FLG_Z_LD      => flg_z_ld, 
+              I_SET    => i_flag_set, 
+              I_CLR    => i_flag_clr,  
 
               RST           => s_rst,
-              IO_STRB       => );
+              IO_STRB       => IO_STRB);
               
 
    my_regfile: RegisterFile 
@@ -240,11 +270,11 @@ begin
               DY_OUT => dy_out,   
               ADRX   => s_inst_reg(12 downto 8),   
               ADRY   => s_inst_reg(7 downto 3),     
-              WR     => rf_wr,   
+              WE     => rf_wr,   
               CLK    => CLK); 
 
 
-   my_PC: PC 
+   my_PC: ProgramCounter 
    port map ( RST        => s_rst,
               CLK        => CLK,
               PC_LD      => s_pc_ld,
@@ -253,7 +283,33 @@ begin
               FROM_STACK => scr_data_out,
               FROM_INTRR => "1111111111",
               PC_MUX_SEL => s_pc_mux_sel,
-              PC_COUNT   => s_pc_count); 
+                   CNT   => s_pc_count); 
 
+    my_alu_mux : mux_2x1
+        port map ( A => dy_out, 
+                   B => s_inst_reg(7 downto 0),
+                 SEL => alu_opy_sel,
+              OUTPUT => alu_b_input);
+
+    my_flags : Flags
+        port map ( FLG_C_SET => flg_c_set,
+           FLG_C_CLR => flg_c_clr,
+           FLG_C_LD => flg_c_ld,
+           FLG_Z_LD => flg_z_ld,
+           FLG_LD_SEL => flg_ld_sel,
+           FLG_SHAD_LD => flg_shad_ld,
+           C_FLAG => carry_flag,
+           Z_FLAG => z_flag,
+           C => c_flag_in,
+           Z => z_flag_in,
+           CLK => CLK);
+           
+    reg_file_mux: Mux_4x1_8bit
+        Port map ( A => alu_result,
+                   B => s_inst_reg(7 downto 0),
+                   C => sp_data_out,
+                   D => IN_PORT, 
+                 SEL => rf_wr_sel,
+              OUTPUT => reg_data_in);    
 
 end Behavioral;

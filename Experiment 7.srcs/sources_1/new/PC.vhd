@@ -26,6 +26,7 @@ entity ProgramCounter is
     Port ( FROM_IMMED : in STD_LOGIC_VECTOR (9 downto 0);
            FROM_STACK : in STD_LOGIC_VECTOR (9 downto 0);
            PC_MUX_SEL : in STD_LOGIC_VECTOR (1 downto 0);
+           FROM_INTRR : in STD_LOGIC_VECTOR (9 downto 0); 
                 PC_LD : in STD_LOGIC;
                PC_INC : in STD_LOGIC;
                   RST : in STD_LOGIC;
@@ -71,7 +72,7 @@ begin
     mux : Mux_3x2
     port map ( A => FROM_IMMED,
                B => FROM_STACK, 
-               C => "1111111111",
+               C => FROM_INTRR,
              SEL => PC_MUX_SEL,
           OUTPUT => program_d_in);
 

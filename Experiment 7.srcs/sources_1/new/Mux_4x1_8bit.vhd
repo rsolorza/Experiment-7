@@ -35,7 +35,7 @@ end Mux_4x1_8bit;
 architecture Behavioral of Mux_4x1_8bit is
 
 begin
-    myProcess: process (A, B, SEL)
+    myProcess: process (A, B, C, D, SEL)
     begin 
     
         if (SEL = "00") then
